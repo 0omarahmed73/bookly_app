@@ -1,8 +1,11 @@
+import 'package:bookly/constants.dart';
 import 'package:bookly/core/util/assets.dart';
+import 'package:bookly/features/home/presentation/views/home_view.dart';
 import 'package:bookly/features/splash/presentation/views/widgets/scaled_child.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -18,6 +21,19 @@ class _SplashViewBodyState extends State<SplashViewBody>
   @override
   void initState() {
     super.initState();
+    initScalingAnimation();
+    navigateToHome();
+  }
+
+  void navigateToHome() {
+    Future.delayed(
+      kDurationScreen,
+      () => Get.off(() => HomeView(),
+          transition: Transition.fade, duration: Duration(milliseconds: 500)),
+    );
+  }
+
+  void initScalingAnimation() {
     animationController = AnimationController(
         vsync: this, duration: const Duration(milliseconds: 300));
     slidingAnimation =
