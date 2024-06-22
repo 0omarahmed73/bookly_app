@@ -29,7 +29,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     Future.delayed(
       kDurationScreen,
       () => Get.off(() => HomeView(),
-          transition: Transition.fade, duration: Duration(milliseconds: 500)),
+          transition: Transition.fade, duration: Duration(milliseconds: 900)),
     );
   }
 
