@@ -9,7 +9,7 @@ class FeaturedListViewItem extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 0.67,
       child: Container(
-        margin: EdgeInsets.only(right: 15),
+        margin: const EdgeInsets.only(right: 15),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             color: Colors.red,
