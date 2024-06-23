@@ -8,28 +8,31 @@ class BestSellerListViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 20),
-      child: Row(
-        children: [
-          SizedBox(
-            height: 125,
-            child: AspectRatio(
-              aspectRatio: 4.5 / 7,
-              child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(16),
-                      image: const DecorationImage(
-                          image: AssetImage(AssetImages.testImage),
-                          fit: BoxFit.fill))),
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.8,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 20),
+        child: Row(
+          children: [
+            SizedBox(
+              height: 125,
+              child: AspectRatio(
+                aspectRatio: 4.5 / 7,
+                child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(16),
+                        image: const DecorationImage(
+                            image: AssetImage(AssetImages.testImage),
+                            fit: BoxFit.fill))),
+              ),
             ),
-          ),
-          const SizedBox(
-            width: 20,
-          ),
-          const BestSellerTexts()
-        ],
+            const SizedBox(
+              width: 20,
+            ),
+            const BestSellerTexts()
+          ],
+        ),
       ),
     );
   }
