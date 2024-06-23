@@ -6,3 +6,4 @@ const kTextLowOpacityColor = Color(0xFFb7b6bc);
 const kDurationScreen = Duration(seconds: 3);
 const kIconColor = Color(0xFFFFDD4F);
 const kGTSectraFineRegular = 'GT Sectra Fine';
+const kPadding = EdgeInsets.only(left: 34, right: 24);
