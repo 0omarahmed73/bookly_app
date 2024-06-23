@@ -1,7 +1,6 @@
 import 'package:bookly/core/util/assets.dart';
 import 'package:bookly/features/home/presentation/views/widgets/best_seller_texts.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});
