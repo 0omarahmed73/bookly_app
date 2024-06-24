@@ -18,6 +18,7 @@ class BookDetailsViewBody extends StatelessWidget {
           SizedBox(
             height: 33,
           ),
+          FeaturedListViewItem()
         ],
       ),
     );
