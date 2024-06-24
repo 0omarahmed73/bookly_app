@@ -13,7 +13,7 @@ class CustomBookDetailsAppBar extends StatelessWidget {
           IconButton(
             icon: const Icon(
               Icons.close,
-              size: 32,
+              size: 31.52,
             ),
             onPressed: () {
               context.pop();
@@ -22,7 +22,7 @@ class CustomBookDetailsAppBar extends StatelessWidget {
           IconButton(
             icon: const Icon(
               Icons.shopping_cart_outlined,
-              size: 32,
+              size: 25,
             ),
             onPressed: () {},
           ),
