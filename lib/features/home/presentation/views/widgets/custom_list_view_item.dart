@@ -12,7 +12,6 @@ class FeaturedListViewItem extends StatelessWidget {
         margin: const EdgeInsets.only(right: 15),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
-            color: Colors.red,
             image: const DecorationImage(
                 image: AssetImage(AssetImages.testImage), fit: BoxFit.fill)),
       ),

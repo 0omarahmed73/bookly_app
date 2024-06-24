@@ -1,4 +1,5 @@
 import 'package:bookly/constants.dart';
+import 'package:bookly/core/util/app_router.dart';
 import 'package:bookly/features/home/presentation/views/home_view.dart';
 import 'package:bookly/features/splash/presentation/views/widgets/scaled_child.dart';
 import 'package:flutter/cupertino.dart';
@@ -16,6 +17,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<double> slidingAnimation;
+
   @override
   void initState() {
     super.initState();
@@ -24,7 +26,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
   }
 
   void navigateToHome() {
-    Future.delayed(kDurationScreen, () => context.pushReplacement(HomeView.id));
+    Future.delayed(
+        kDurationScreen, () => context.pushReplacement(AppRouter.kHomeView));
   }
 
   void initScalingAnimation() {
