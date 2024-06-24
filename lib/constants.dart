@@ -7,3 +7,5 @@ const kDurationScreen = Duration(seconds: 3);
 const kIconColor = Color(0xFFFFDD4F);
 const kGTSectraFineRegular = 'GT Sectra Fine';
 const kPadding = EdgeInsets.only(left: 34, right: 24);
+const kButtonColor = Color(0xFFEF8262);
+const kBorderRadius = Radius.circular(12);

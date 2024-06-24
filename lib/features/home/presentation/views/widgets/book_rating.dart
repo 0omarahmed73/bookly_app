@@ -17,16 +17,19 @@ class BookRating extends StatelessWidget {
         const FaIcon(
           FontAwesomeIcons.solidStar,
           color: kIconColor,
-          size: 18,
+          size: 14,
         ),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 5),
           child: Text('4.8', style: Styles.textStyle16),
         ),
-        Text(
-          '(2390)',
-          style: Styles.textStyle14.copyWith(
-            fontWeight: FontWeight.w500
+        Opacity(
+          opacity: 0.5,
+          child: Text(
+            '(2390)',
+            style: Styles.textStyle14.copyWith(
+              fontWeight: FontWeight.w500
+            ),
           ),
         )
       ],
