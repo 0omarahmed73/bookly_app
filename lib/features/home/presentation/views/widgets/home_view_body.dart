@@ -49,7 +49,7 @@ class HomeViewBody extends StatelessWidget {
           padding: kPadding,
           child: BestSellerListView(),
         ),
-      )
+      ),
     ]);
   }
 }
