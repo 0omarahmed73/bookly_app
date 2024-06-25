@@ -26,7 +26,7 @@ class HomeViewBody extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15),
-              child: FeaturedBooksListView(height: MediaQuery.of(context).size.height * 0.32,),
+              child: FeaturedBooksListView(height: MediaQuery.of(context).size.height * 0.28,),
             ),
             const SizedBox(
               height: 36,
