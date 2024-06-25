@@ -14,7 +14,7 @@ class SearchViewBody extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CustomSearchField(),
               SizedBox(
@@ -24,7 +24,9 @@ class SearchViewBody extends StatelessWidget {
                 'Search Result',
                 style: Styles.textStyle18,
               ),
-              SizedBox(height: 16,)
+              SizedBox(
+                height: 16,
+              )
             ],
           )),
           SearchResultListView()

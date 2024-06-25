@@ -8,12 +8,8 @@ class CustomSearchField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-          enabledBorder: buildBorderOutline(
-            color: Colors.white60
-          ),
-          focusedBorder: buildBorderOutline(
-            color: Colors.white
-          ),
+          enabledBorder: buildBorderOutline(color: Colors.white60),
+          focusedBorder: buildBorderOutline(color: Colors.white),
           hintText: 'Search',
           suffixIcon: IconButton(
               onPressed: () {},
@@ -31,5 +27,3 @@ class CustomSearchField extends StatelessWidget {
         borderSide: BorderSide(color: color));
   }
 }
-
-
