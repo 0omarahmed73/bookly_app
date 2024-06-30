@@ -1,4 +1,4 @@
-import 'package:bookly/core/util/styles.dart';
+import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/book_details_texts.dart';
 import 'package:bookly/features/home/presentation/views/widgets/related_book_list_view.dart';
 import 'package:flutter/material.dart';

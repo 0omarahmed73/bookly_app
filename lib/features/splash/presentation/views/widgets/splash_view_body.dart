@@ -1,5 +1,5 @@
 import 'package:bookly/constants.dart';
-import 'package:bookly/core/util/app_router.dart';
+import 'package:bookly/core/utils/app_router.dart';
 import 'package:bookly/features/home/presentation/views/home_view.dart';
 import 'package:bookly/features/splash/presentation/views/widgets/scaled_child.dart';
 import 'package:flutter/cupertino.dart';
