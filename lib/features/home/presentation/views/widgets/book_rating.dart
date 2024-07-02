@@ -6,8 +6,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class BookRating extends StatelessWidget {
   const BookRating({
     super.key,
+    this.rating = 4.8,
+    this.count = 2000,
   });
 
+  final num rating;
+  final num count;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -19,14 +23,14 @@ class BookRating extends StatelessWidget {
           color: kIconColor,
           size: 14,
         ),
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 5),
-          child: Text('4.8', style: Styles.textStyle16),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 5),
+          child: Text('$rating', style: Styles.textStyle16),
         ),
         Opacity(
           opacity: 0.5,
           child: Text(
-            '(2390)',
+            '($count)',
             style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w500),
           ),
         )

@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 
 class BestSellerTexts extends StatelessWidget {
   const BestSellerTexts({
-    super.key, required this.book,
+    super.key,
+    required this.book,
   });
   final BookModel book;
   @override
@@ -16,29 +17,32 @@ class BestSellerTexts extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            child: Text('Harry Potter and the Goblet of Fire',
+            child: Text(book.volumeInfo.title!,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: Styles.textStyle20
                     .copyWith(fontFamily: kGTSectraFineRegular)),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(vertical: 2.0),
             child: Text(
-              'J.K. Rowling',
+              book.volumeInfo.authors?[0] ?? 'No Author',
               style: Styles.textStyle14,
             ),
           ),
           Row(
             children: [
               Text(
-                '19.99 €',
+                'Free',
                 style: Styles.textStyle20.copyWith(fontWeight: FontWeight.bold),
               ),
               const SizedBox(
                 width: 36.3,
               ),
-              const BookRating(),
+              BookRating(
+                rating: book.volumeInfo.averageRating ?? 5,
+                count: book.volumeInfo.ratingsCount ?? 100,
+              ),
             ],
           )
         ],
