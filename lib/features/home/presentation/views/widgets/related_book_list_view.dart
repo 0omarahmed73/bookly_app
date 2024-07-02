@@ -14,7 +14,9 @@ class RelatedBookListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => const Padding(
           padding: EdgeInsets.only(right: 10),
-          child: CustomBookImage(),
+          child: CustomBookImage(
+            img: 'https://archive.org/download/placeholder-image/placeholder-image.jpg',
+          ),
         ),
       ),
     );
