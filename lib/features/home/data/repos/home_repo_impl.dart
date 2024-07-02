@@ -32,9 +32,9 @@ class HomeRepoImpl implements HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
     try {
       var data = await apiService.get(
-          endPoint:
-              'volumes?Filtering=free-ebooks&q=subject:islam');
+          endPoint: 'volumes?Filtering=free-ebooks&q=subject:islam');
       List<BookModel> books = [];
+      print(data);
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));
       }
