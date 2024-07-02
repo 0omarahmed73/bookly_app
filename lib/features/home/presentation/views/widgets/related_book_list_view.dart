@@ -1,3 +1,4 @@
+import 'package:bookly/core/widgets/custom_cached_image.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +15,10 @@ class RelatedBookListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => const Padding(
           padding: EdgeInsets.only(right: 10),
-          child: CustomBookImage(
-            img: 'https://archive.org/download/placeholder-image/placeholder-image.jpg',
+          child: CustomCachedImage(
+            imageUrl:
+                'https://archive.org/download/placeholder-image/placeholder-image.jpg',
+            aspectRation: 0.67,
           ),
         ),
       ),

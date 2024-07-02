@@ -1,5 +1,6 @@
 import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
+import 'package:bookly/core/widgets/custom_cached_image.dart';
 import 'package:bookly/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly/features/home/presentation/views/widgets/books_action.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_book_image.dart';
@@ -17,9 +18,10 @@ class BookDetailsSection extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(
               horizontal: MediaQuery.of(context).size.width * 0.2),
-          child: const CustomBookImage(
-            img:
+          child: const CustomCachedImage(
+            imageUrl:
                 'https://archive.org/download/placeholder-image/placeholder-image.jpg',
+            aspectRation: 0.67,
           ),
         ),
         const SizedBox(
