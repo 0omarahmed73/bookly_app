@@ -13,7 +13,6 @@ class BookDetailsSection extends StatelessWidget {
     required this.bookModel,
   });
   final BookModel bookModel;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -48,7 +47,7 @@ class BookDetailsSection extends StatelessWidget {
         const SizedBox(
           height: 36,
         ),
-        const BooksAction(),
+        BooksAction(bookModel: bookModel,),
       ],
     );
   }
