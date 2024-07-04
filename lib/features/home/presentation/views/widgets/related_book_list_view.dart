@@ -23,11 +23,11 @@ class RelatedBookListView extends StatelessWidget {
               padding: const EdgeInsets.all(0),
               itemCount: 10,
               scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) => const Padding(
+              itemBuilder: (context, index) => Padding(
                 padding: EdgeInsets.only(right: 10),
                 child: CustomCachedImage(
                   imageUrl:
-                      'https://archive.org/download/placeholder-image/placeholder-image.jpg',
+                      state.books[index].volumeInfo.imageLinks!.thumbnail!,
                   aspectRation: 0.67,
                 ),
               ),
